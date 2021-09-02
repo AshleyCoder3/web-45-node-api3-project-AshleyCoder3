@@ -10,7 +10,7 @@ function logger(req, res, next) {
 async function validateUserId(req, res, next) {
   try {
     const { id } = req.params
-    const possUser = await User.findById(id)
+    const possUser = await User.getById(id)
     if (possUser) {
       req.user = possUser
       next()

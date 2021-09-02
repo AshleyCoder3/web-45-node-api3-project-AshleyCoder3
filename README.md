@@ -33,10 +33,10 @@ Your instructor should have communicated what submission method to use for this 
   - `validateUser` validates the `body` on a request to create or update a user
   - if the request `body` lacks the required `name` field, respond with status `400` and `{ message: "missing required name field" }` -->
 
-- `validatePost()`
+<!-- - `validatePost()`
 
   - `validatePost` validates the `body` on a request to create a new post
-  - if the request `body` lacks the required `text` field, respond with status `400` and `{ message: "missing required text field" }`
+  - if the request `body` lacks the required `text` field, respond with status `400` and `{ message: "missing required text field" }` -->
 
 ### Database Persistence Helpers
 
