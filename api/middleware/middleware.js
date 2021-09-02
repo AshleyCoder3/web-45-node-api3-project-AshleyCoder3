@@ -25,14 +25,28 @@ async function validateUserId(req, res, next) {
   }
 
 }
-//eslint-disable-next-line
+
 function validateUser(req, res, next) {
-  // DO YOUR MAGIC
+  if (!req.body.name) {
+    next({
+      message: 'missing required name field',
+      status: 400
+    })
+  } else {
+    next()
+  }
 }
-//eslint-disable-next-line
+
 function validatePost(req, res, next) {
-  // DO YOUR MAGIC
+  if (!req.body.text) {
+    next({
+      message: 'missing required text field',
+      status: 400
+    })
+  } else {
+    next()
+  }
 }
 
 // do not forget to expose these functions to other modules
-module.exports = { logger, validateUserId }
+module.exports = { logger, validateUserId, validateUser, validatePost }
