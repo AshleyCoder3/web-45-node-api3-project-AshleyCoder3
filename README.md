@@ -12,15 +12,15 @@ Your instructor should have communicated what submission method to use for this 
 
 - Wire the application together completing `api/server.js` and `index.js`.
 - Write four custom middleware functions detailed below, in `api/middleware/middleware.js`.
-- Use the custom middlewares in their appropriate places in the application (specific endpoints, entire routes or globally).
+- Use the custom middleware's in their appropriate places in the application (specific endpoints, entire routes or globally).
 - There are endpoints in `users-router.js` to retrieve the list of `posts` by a `user` and to store a new `post` for a `user`.
 
 #### Custom Middleware Requirements
-
+<!-- 
 - `logger()`
 
   - `logger` logs to the console the following information about each request: request method, request url, and a timestamp
-  - this middleware runs on every request made to the API
+  - this middleware runs on every request made to the API -->
 
 - `validateUserId()`
 
